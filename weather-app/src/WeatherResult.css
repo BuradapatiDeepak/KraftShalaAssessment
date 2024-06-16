@@ -1,0 +1,49 @@
+.weather-card {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Adjust card width as needed */
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Ensure the .weather-card container is styled as per your requirements */
+}
+
+.weather-card h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.weather-card p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.cancel-button {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    transition: color 0.3s ease;
+    align-self: flex-end;
+    height: 10px;
+}
+
+.cancel-button:hover {
+    color: darkred;
+}
+
+.weather-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.aa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

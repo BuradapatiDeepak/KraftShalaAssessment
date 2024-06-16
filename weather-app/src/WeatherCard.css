@@ -1,0 +1,27 @@
+.weather-card {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px; /* Adjust card width as needed */
+    text-align: center;
+}
+
+.weather-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.weather-card .cancel-button {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.weather-card .cancel-button:hover {
+    color: darkred;
+}

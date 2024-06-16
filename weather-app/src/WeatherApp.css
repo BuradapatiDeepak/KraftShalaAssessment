@@ -1,0 +1,134 @@
+/* WeatherApp.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.weather-app {
+    text-align: center;
+    min-height: 100vh; /* Ensure full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin: 20px auto;
+    max-width: 300px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 93%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.weather-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between cards as needed */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 20px;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50; /* Default button color */
+    color: black; /* Moon icon color */
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode-toggle i {
+    font-size: 24px;
+    background-color: #ccc; /* Grey background for both sun and moon icons */
+    padding: 8px; /* Padding to center the icon within the circle */
+    border-radius: 50%; /* Ensure the icon is displayed within a circle */
+}
+
+.dark-mode-toggle.dark-mode {
+    background-color: #333; /* Dark mode button color */
+    color: #fff; /* Icon color in dark mode */
+}
+
+/* Weather cards */
+.weather-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Adjust card width as needed */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: black; /* Ensure text color remains black */
+}
+
+.weather-card h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.weather-card p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.weather-card .cancel-button {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: color 0.3s ease;
+}
+
+.weather-card .cancel-button:hover {
+    color: darkred;
+}
+
+.weather-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
